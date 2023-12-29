@@ -22,3 +22,42 @@ html,body{
     height: 100vh;
     background-color:peachpuff;
 }
+#navbar{
+    height:90px;
+    width: 100%;
+    background-color: rgba(255, 255, 255,0.5);
+    position:fixed;
+    
+}
+#navbar ul li a{
+    text-decoration: none;
+    color: rgb(255, 128, 128);
+    font-weight: bold;
+    font-size: 25px;
+    /* border: 5px black solid; */
+    /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    
+}
+#navbar ul{
+    margin-left:500px ;
+    padding: 30px;
+    /* float: right; */
+}
+#navbar ul li{
+    display: inline;
+    padding: 10px;
+    margin-left: 40px;
+}
+#navbar ul li a:hover
+{   
+    font-weight: 900;
+    transition: all ease 0.5s;
+    color: black;
+    /* background-color:rgba(246, 253, 195,0.88); */
+    text-decoration: underline;
+    /* margin: 2%; */
+    padding: 2%;
+    /* border:2px white solid; */
+    /* border-radius: 50%; */
+    /* padding: ; */
+}
