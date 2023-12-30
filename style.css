@@ -60,22 +60,30 @@ html,body{
     margin-left: 10%;
     height: 300px;
     width: 500px;
-    border: 2px black solid; 
+    /* border: 2px black solid;  */
 }
 #f h1{
     font-size: 50px;
     font-weight: 100;
     margin-top: 50px;
     color: white;
+    text-shadow: 10px 10px 20px black;
 }
 .f1{
     margin: 5%;
     height: 300px;
     width: 20%;
-    border: 2px black solid;
+    /* border: 2px black solid; */
     background-color: rgb(255, 207, 150);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.576);
+    animation: boxshadow 1s infinite;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
 }
-
+@keyframes boxshadow {
+    100%{
+        box-shadow: 10px 10px 20px black;
+    }
+}
 #second{
     height:600px;
     width: 100%;
@@ -86,13 +94,24 @@ html,body{
 }
 #box{
     height: 450px;
-    width: 1100px;
+    width: 1200px;
     background-color: white;
     border: 5px rgb(255, 207, 150) solid;
-    
-    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     /* top: 700px; works only with position
     left: 100px; */
+}
+#box #one{
+    height: 80%;
+    width: 40%;
+    background-color: black;
+}
+#box #two{
+    height: 80%;
+    width: 50%;
+    background-color: red;
 }
 #third{
     height:600px;
@@ -136,6 +155,7 @@ html,body{
     justify-content: center; 
 }
 .for1{
+    border-radius: 50%;
     margin: 5%;
     height: 300px;
     width: 300px;
