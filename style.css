@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family:"General Sans Regular";
 }
 html,body{
     width: 100%;
@@ -23,7 +24,7 @@ html{
     border-radius: 6px;
 }
 .navbar{
-    /* background-color: chartreuse; */
+    background-color: transparent;
     width: 100vh;
     display: flex;
     align-items: center;
@@ -68,7 +69,7 @@ html{
     width: 100%;
     display: flex;
     /* justify-content: center; */
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     /* background-color: chocolate; */
 }
@@ -80,6 +81,9 @@ html{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+.left-sec .content{
+    text-shadow: 0px 0px 30px rgba(0, 0, 0, 0.65);
 }
 #links{
     height: 60px;
@@ -137,4 +141,274 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.right-sec .main-image img{
+    filter: drop-shadow(10px 0px 20px rgba(0, 0, 0, 0.85));
+}
+#about{
+    /* background-color: teal; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    /* justify-content: center; */
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: chocolate; */
+}
+#about .skill-section{
+    background-color: #fff;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 15px;
+    padding: 10px 20px;
+    border-radius: 7px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.392);
+}
+#about .skill-section h3{
+    color: rgba(0, 0, 0, 0.549);
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 2%;
+    /* padding-bottom: 0%; */
+    text-align: center;
+    font-size: 30px;
+}
+.container{
+    /* position: relative; */
+    max-width: 500px;
+    width: 100%;
+    background-color: #ffffff4d;
+    margin: 0 15px;
+    padding: 10px 20px;
+    border-radius: 7px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.116) inset;
+
+}
+.container .skillbox{
+    width: 100%;
+    margin: 25px 0 ;
+}
+.skillbox .title{
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+}
+.skillbox .skillbar{
+    height: 8px;
+    width: 100%;
+    border-radius: 6px;
+    margin-top: 4px;
+    background-color: rgba(0,0,0,0.1);
+}
+.skillbar .skillper{
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 90%;
+    background-color: black;
+    border-radius: 6px;
+    /* animation */
+    animation: progress 0.4s ease-in-out forwards;
+    opacity: 0;
+}
+.skillper.css{
+    width: 80%;
+    animation-delay:0.1s ;
+}
+.skillper.nodejs{
+    width: 40%;
+    animation-delay:0.2s ;
+}
+.skillper.java{
+    width: 75%;
+    animation-delay:0.3s ;
+}
+@keyframes progress {
+    0%{
+        width: 0;
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.skillper .tooltip{
+    position:absolute;
+    right: -14px;
+    top: -28px;
+    font-size: 9px;
+    font-weight: 500px;
+    color: #fff;
+    padding: 2px;
+    border-radius: 3px;
+    background: black;
+    z-index: 1;
+}
+.tooltip::before{
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    content: '';
+    bottom: -2px;
+    left: 50%;
+    z-index: -1;
+    background-color:black;
+    transform: translateX(-50%) rotate(45deg);
+}
+.about-me{
+    background-color: #fff;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 15px;
+    padding: 10px 20px;
+    border-radius: 7px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.392);
+}
+.about-me p{
+    color: black;
+    opacity: 0.8;
+}
+#education{
+    /* background-color: teal; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#education .education-sec{
+    display: flex;
+    /* justify-content: center; */
+    justify-content: space-evenly;
+    align-items: center;
+}
+/* #education h1{
+    font-size: 60px;
+    color: black;
+} */
+.edu{
+    margin: 5%;
+    height: 250px;
+    width: 400px;
+    /* border: 2px black solid; */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.348);
+    border-radius: 2%;
+    background-color: white;
+}
+.education-sec .edu h4{
+    color: rgba(0, 0, 0, 0.403);
+    text-align: center;
+    padding: 2%;
+    padding-bottom: 0%;
+}
+.education-sec .edu ul{
+   padding: 9%; 
+}
+.education-sec .edu p{
+    padding: 5%;
+}
+.project-sec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* #project h1{
+    padding-top: 3%;
+    font-size: 60px;
+    color: black;
+} */
+.project-sec{
+    height:550px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    /* border-radius: 200px; */
+    /* padding: 2%; */
+}
+.pro{
+    margin: 8%;
+    height: 400px;
+    width: 350px;
+    /* border: 10px black solid; */
+    /* background-color: rgb(255, 128, 128); */
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px #00000072 inset, 10px 10px 20px white inset;
+    padding: 2%;
+}
+.pro .icon{
+    height: 200px;
+    width: 200px;
+    background-color:rgba(0, 0, 0, 0.234);
+    margin: 12%;
+    margin-left: 15%;
+    border-radius: 25px 25px 0px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pro h3{
+    text-align: center;
+    padding: 2%;
+    padding-bottom: 0%;
+}
+.pro p{
+    text-align: center;
+    padding: 2%;
+    padding-bottom: 0%;
+}
+#contact{
+    height:550px;
+    width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly; 
+    /* flex-direction: column; */
+}
+#contact h5{
+    font-size: 2vw;
+    opacity: 0.5;
+}
+.contact-sec{
+    width: 30%;
+}
+.contact-sec form .input-tag{
+    margin: 5px;
+}
+.contact-sec form .input-tag input{
+    margin: 5px;
+}
+.input-tag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.input-tag input{
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.247);
+    height: 100%;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #111;
+    font-size: 1vw;
+}
+.input-tag textarea{
+    height: 100%;
+    width: 100%;
+    font-size: 1vw;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.247);
+}
+textarea::-webkit-scrollbar{
+    display: none;
+}
+.btn{
+    height: 30px;
+    width: 48px;
+    border: 2px solid black;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #111;
 }
