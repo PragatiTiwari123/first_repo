@@ -1,0 +1,22 @@
+@media screen and (max-width : 800px){
+    .navlist{
+        /* background-color: chartreuse; */
+        display: none;
+    }
+    .navbar i{
+        display: block;
+    }
+    .navbar .logo{
+        font-size: 1vw;
+        padding: 3vw;
+    }
+    #home{
+        flex-direction: column-reverse;
+    }
+    #home .right-sec{
+        margin-top: 10%;
+    }
+    #contact{
+        flex-direction: column;
+    }
+}
