@@ -18,42 +18,48 @@ html{
     /* background-color: rgb(255, 207, 150); */
 }
 ::-webkit-scrollbar-thumb{
-    background-color:black ;
+    background-color:black;
     height: 150px;
     /* background: linear-gradient(transparent,rgb(255, 128, 128)); */
     border-radius: 6px;
 }
 .navbar{
-    background-color: transparent;
-    /* width: 100%; */
+    /* background-color:pink; */
+    /* width: 100vmax; */
+    height: 80px;
     display: flex;
     align-items: center;
     /* justify-content: center; */
-    position: fixed;
+    position: sticky;
     border-radius:  0 10px;
     top: 0;
     cursor: pointer;
 }
 .navlist{
+    /* background-color: coral; */
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 15px; 
 }
+.logo{
+    /* background-color: sienna; */
+    font-size: 10px;
+    font-weight: 500;
+    /* padding: 5px 10px; */
+    padding: 3vw;
+}
 .navlist li{
+    /* background-color: teal; */
     list-style: none;
     padding: 5px 15px;
     padding-left: 23px;
 }
-.logo{
-    font-size: 10px;
-    font-weight: 500;
-    padding: 5px 10px;
-}
 .navlist li a{
+    /* background-color: silver; */
     text-decoration: none;
     font-weight: 550;
-    font-size: 1.2vw;
+    font-size: 20px;
     color: black;
 }
 .navbar .navlist li a:hover{
@@ -63,15 +69,14 @@ html{
     padding-bottom: 6px;
 }
 .navbar i{
+    /* background-color: slateblue; */
     display: none;
-    position: absolute;
-    /* font-size: 4vw; */
-    padding: 3vw;
+    /* border: 2px solid black; */
 }
 #home{
     position: relative;
-    /* height: 100vmin;
-    width: 100vmin; */
+    height: calc(100% - 80px);
+    width: 100%;
     display: flex;
     /* justify-content: center; */
     justify-content: space-around;
@@ -82,14 +87,16 @@ html{
     /* background-color: yellowgreen; */
     /* height: 80vh;
     width: 80vh; */
-    height: 50%;
-    width: 50%;
+    height: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 .left-sec .content{
+    text-align: center;
+    width: 100%;
     text-shadow: 0px 0px 30px rgba(0, 0, 0, 0.65);
 }
 #links{
@@ -108,9 +115,11 @@ html{
     font-size: 1.25vw;
 }
 .link{
+    /* background-color: aquamarine; */
     padding: 2%;
 }
 #link1{
+    /* background-color: aquamarine; */
     margin-top: 2px;
     display: flex;
     align-items: center;
@@ -171,6 +180,7 @@ html{
     /* background-color: chocolate; */
 }
 #about .skill-section{
+    margin: 10%;
     background-color: #fff;
     max-width: 400px;
     width: 100%;
@@ -272,6 +282,7 @@ html{
     transform: translateX(-50%) rotate(45deg);
 }
 .about-me{
+    margin: 10%;
     background-color: #fff;
     max-width: 600px;
     width: 100%;
@@ -292,7 +303,7 @@ html{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    position: relative;
+    /* position: relative; */
 }
 #education .education-sec{
     display: flex;
@@ -384,6 +395,7 @@ html{
     display: flex;
     align-items:center;
     justify-content: space-evenly; 
+    position: relative;
     /* justify-content: center; */
     /* flex-wrap: wrap; */
     /* flex-direction: column; */
@@ -394,6 +406,8 @@ html{
 }
 .contact-sec{
     width: 30%;
+    /* height: 100%; */
+    /* width: 60%; */
 }
 .contact-sec form .input-tag{
     margin: 5px;
@@ -430,10 +444,12 @@ textarea::-webkit-scrollbar{
     border: 2px solid black;
     /* font-size: 12px; */
     /* font-weight: bold; */
+    border-radius: 5px;
     color: #fff;
     background-color: #111;
 }
 footer{
+    position: relative;
     height: 28%;
     width: 100%;
     background-color: black;

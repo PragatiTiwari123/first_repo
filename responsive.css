@@ -1,22 +1,61 @@
 @media screen and (max-width : 800px){
-    .navlist{
-        /* background-color: chartreuse; */
-        display: none;
-    }
-    .navbar i{
-        display: block;
-    }
-    .navbar .logo{
-        font-size: 1vw;
-        padding: 3vw;
-    }
     #home{
         flex-direction: column-reverse;
     }
     #home .right-sec{
         margin-top: 10%;
     }
+    .link a{
+        font-size: 15px;
+    }
+}
+@media (max-width : 700px){
+    .footer-sec{
+        width: 70%;
+    }
+}
+@media (max-width : 1000px){
     #contact{
         flex-direction: column;
+    }
+    #contact h5{
+        font-size: 5vw;
+    }
+    .input-tag input{
+        font-size: 1.2em;
+    }
+    .contact-sec{
+        width: 60%;
+    }
+}
+@media (max-width : 350px){
+    .link a{
+        display: none;
+    }
+    .circle{
+        display: none;
+    }
+    .link i{
+        display: none;
+    }
+}
+@media screen and (max-width : 800px){
+    .navlist{
+        /* background-color: chartreuse; */
+        display: none;
+    }
+    .navbar i{
+        display: block;
+        position: absolute;
+        top: 25%;
+        right: 5%;
+        font-size: 25px;
+        /* font-size: 4vw; */
+        /* font-size: 3vw; */
+        /* padding: 20px; */
+    }
+    .navbar .logo{
+        font-size: 10px;
+        padding: 3vw;
     }
 }
