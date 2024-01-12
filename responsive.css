@@ -1,4 +1,12 @@
 @media screen and (max-width : 800px){
+    .left-sec{
+        width: 100%;
+        height: 50%;
+    }
+    .right-sec{
+        height: 50%;
+        width: 100%;
+    }
     #home{
         flex-direction: column-reverse;
     }
@@ -7,6 +15,20 @@
     }
     .link a{
         font-size: 15px;
+    }
+    .aboutt{
+        flex-wrap: wrap;
+    }
+    .main-image{
+        height: 300px;
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .right-sec .main-image img{
+        height: 100%;
+        width: 100%;
     }
 }
 @media (max-width : 700px){
@@ -27,6 +49,18 @@
     .contact-sec{
         width: 60%;
     }
+    .skill-section{
+        max-width: 600px;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .container{
+        max-width: 500px;
+        width: 100%;
+    }
+    .about-me{
+        margin-top: 20px;
+    }
 }
 @media (max-width : 350px){
     .link a{
@@ -39,7 +73,21 @@
         display: none;
     }
 }
+@media (max-width : 950px){
+    .project-sec{
+        flex-direction: column;
+        /* margin: 20px; */
+        /* padding: 20px; */
+    }
+    .pro{
+        margin: 20px;
+    }
+}
 @media screen and (max-width : 800px){
+    .navlist{
+        flex-direction: column;
+        text-align: center;
+    }
     .navlist{
         /* background-color: chartreuse; */
         display: none;
