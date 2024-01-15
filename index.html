@@ -12,7 +12,7 @@
     <nav class="navbar">
         <div class="logo" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"><span>Pragati <br>Tiwari</span></div>
         <ul class="navlist">
-            <li><a href="#home">Home</a></li>
+            <li><a href="#home" class="active">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#education">Education</a></li>
             <li><a href="#project">Projects</a></li>
@@ -29,7 +29,7 @@
         <div class="left-sec">
             <div class="content">
                 <h3>Hellow,, I'm </h3>
-                <h4 style="font-size: 5vw; text-align: center;  color: black;"><span>Pragati Tiwari</span></h4>
+                <h4 style="font-size: 5vw; text-align: center;  color: rgba(0, 0, 0, 0.726);"><span>Pragati Tiwari</span></h4>
                 <h5 style="font-size: 2vw; text-align: center;"><span>Student</span></h5>
                 <!-- <br> -->
                 <div id="link1" class="link">
@@ -47,6 +47,14 @@
                     <a href="https://github.com/PragatiTiwari123">Pragati's Github</a>
                 </div>
             </div>
+            <div id="buttton" class="front-page-button">
+                <div id="buttton1">
+                    <button class="fpb"><a href="#" download="Pragati_Tiwari_resume.pdf">Say Hii</a></button>
+                </div>
+                <div id="buttton2">
+                    <button class="fpb"><a href="#" download="Pragati_Tiwari_resume.pdf"><i class="ri-folder-download-line"></i> Resume</a></button>
+                </div>
+            </div>
         </div>
         <div class="right-sec">
             <div class="main-image">
@@ -54,15 +62,15 @@
             </div>
         </div>
     </section>
-    <hr>
+    <!-- <hr> -->
     <section id="about">
-        <h2>Something About me..</h2>
+        <h2>Something About me..<i class="ri-heart-3-line"></i></h2>
         <div class="aboutt">
             <div class="skill-section">
                 <h3>skills</h3>
                         <div class="container">
                             <div class="skillbox">
-                                <span class="title">HTML</span>
+                                <span class="title">HTML <i class="ri-html5-line"></i></span>
                                 <div class="skillbar">
                                     <span class="skillper html">
                                         <span class="tooltip">90%</span>
@@ -70,7 +78,7 @@
                                 </div>
                             </div>
                             <div class="skillbox">
-                                <span class="title">CSS</span>
+                                <span class="title">CSS <i class="ri-css3-fill"></i></span>
                                 <div class="skillbar">
                                     <span class="skillper css">
                                         <span class="tooltip">80%</span>
@@ -86,7 +94,7 @@
                                 </div>
                             </div>
                             <div class="skillbox">
-                                <span class="title">Java</span>
+                                <span class="title">Javascript <i class="ri-javascript-line"></i></span>
                                 <div class="skillbar">
                                     <span class="skillper java">
                                         <span class="tooltip">75%</span>
@@ -103,9 +111,9 @@
             </div>
         </div>
     </section>
-    <hr>
+    <!-- <hr> -->
     <section id="education">
-        <h2>Education</h2>
+        <h2>Education <i class="ri-book-2-line"></i></h2>
         <div class="education-sec">
             <div class="edu">
                 <h4>X th Standard</h4>
@@ -136,46 +144,58 @@
             </div>
         </div>
     </section>
-    <hr>
+    <!-- <hr> -->
     <section id="project">
-        <h2>Project</h2>
+        <h2>Project <i class="ri-list-check"></i></h2>
         <div class="project-sec">
-            <div class="pro">
-                <h3>Patient-pathway</h3>
-                    <div class="icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="height: 180px; color:white"><path d="M21 20H23V22H1V20H3V3C3 2.44772 3.44772 2 4 2H20C20.5523 2 21 2.44772 21 3V20ZM11 8H9V10H11V12H13V10H15V8H13V6H11V8ZM14 20H16V14H8V20H10V16H14V20Z" fill="currentColor"></path></svg>
-                    </div>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet, explicabo!</p> 
-            </div>
-            <div class="pro">
-                <h3>Personal portfolio</h3>
-                    <div class="icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="height: 180px; color:white"><path d="M12 2C17.52 2 22 6.48 22 12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12C2 6.48 6.48 2 12 2ZM6.02332 15.4163C7.49083 17.6069 9.69511 19 12.1597 19C14.6243 19 16.8286 17.6069 18.2961 15.4163C16.6885 13.9172 14.5312 13 12.1597 13C9.78821 13 7.63095 13.9172 6.02332 15.4163ZM12 11C13.6569 11 15 9.65685 15 8C15 6.34315 13.6569 5 12 5C10.3431 5 9 6.34315 9 8C9 9.65685 10.3431 11 12 11Z" fill="currentColor"></path></svg>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, est.</p>
-            </div>
+            <center>
+                <div class="pro">
+                    <h3>Patient-pathway</h3>
+                        <div class="icon">
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="height: 180px; color:white; text-decoration:none;"><path d="M21 20H23V22H1V20H3V3C3 2.44772 3.44772 2 4 2H20C20.5523 2 21 2.44772 21 3V20ZM11 8H9V10H11V12H13V10H15V8H13V6H11V8ZM14 20H16V14H8V20H10V16H14V20Z" fill="currentColor"></path></svg>
+                            </a>
+                        </div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet, explicabo!.. <a href="#">more</a></p> 
+                </div>
+            </center>
+            <center>
+                <div class="pro">
+                    <h3>Personal portfolio</h3>
+                        <div class="icon">
+                            <a href="https://github.com/PragatiTiwari123/first_tini_project">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="height: 180px; color:white; text-decoration:none;"><path d="M12 2C17.52 2 22 6.48 22 12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12C2 6.48 6.48 2 12 2ZM6.02332 15.4163C7.49083 17.6069 9.69511 19 12.1597 19C14.6243 19 16.8286 17.6069 18.2961 15.4163C16.6885 13.9172 14.5312 13 12.1597 13C9.78821 13 7.63095 13.9172 6.02332 15.4163ZM12 11C13.6569 11 15 9.65685 15 8C15 6.34315 13.6569 5 12 5C10.3431 5 9 6.34315 9 8C9 9.65685 10.3431 11 12 11Z" fill="currentColor"></path></svg>
+                            </a>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, est... <a href="#">more</a></p>
+                </div>
+            </center>
         </div>
     </section>
-    <hr>
+    <!-- <hr> -->
     <section id="contact">
-        <h2>Get in touch</h2>
+        <h2>Get in touch <i class="ri-chat-1-line"></i></h2>
         <div class="contact-us">
-            <h5>Give me your feedback..</h5>
+            <h5>Give me your feedback..<i class='ri-quill-pen-line'></i></h5>
             <div class="contact-sec">
                 <form action="">
                     <div class="input-tag">
                         <input type="text" placeholder="Enter your name">
                         <input type="text" placeholder="Enter your mail">
                         <input type="text" placeholder="Enter the topic">
+                        <input type="text" placeholder="Type your message">
                     </div>
-                    <!-- <textarea name="text" id="text" cols="60" rows="8" placeholder="Enter your message"></textarea> -->
+                    <!-- <textarea name="text" id="text" cols="60" rows="5" placeholder="Enter your message"></textarea> -->
                 </form>
-                <button class="btn">Submit</button>
+                <div class="botton">
+                    <button class="btn" type="reset">Reset</button>
+                    <button class="btn" type="submit">Submit</button>
+                </div>
             </div>
         </div>
         
     </section>
-    <hr>
+    <!-- <hr> -->
     <footer>
         <div class="footer-sec">
             <div class="icon-sec">

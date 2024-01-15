@@ -16,6 +16,9 @@
     .link a{
         font-size: 15px;
     }
+    .fpb{
+        font-size: 15px;
+    }
     .aboutt{
         flex-wrap: wrap;
     }
@@ -72,6 +75,10 @@
     .link i{
         display: none;
     }
+    #buttton{
+        display: none;
+    }
+
 }
 @media (max-width : 950px){
     .project-sec{
@@ -84,6 +91,9 @@
     }
 }
 @media screen and (max-width : 800px){
+    .navbar{
+        background-color: transparent;
+    }
     .navlist{
         flex-direction: column;
         text-align: center;

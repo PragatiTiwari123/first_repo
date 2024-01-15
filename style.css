@@ -21,6 +21,7 @@ html{
     mix-blend-mode: difference;
     position: absolute;
     transition: all linear 0.2s;
+    z-index: 2000;
 }
 ::-webkit-scrollbar{
     width: 5px;
@@ -38,17 +39,29 @@ h2{
     padding-top: 20px;
     padding-bottom: 20px;
 }
-.navbar{
-    /* background-color:pink; */
-    /* width: 100vmax; */
+/* .navbar{
+    /* background-color:pink; 
+    /* width: 100vmax; 
     height: 80px;
     display: flex;
     align-items: center;
-    /* justify-content: center; */
+    /* justify-content: center; 
     position: sticky;
     border-radius:  0 10px;
     top: 0;
     cursor: pointer;
+} */
+.navbar {
+    background-color: #fff;
+    /* padding: 10px; */
+    position: fixed;
+    height: 90px;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
 }
 .navlist{
     /* background-color: coral; */
@@ -77,11 +90,18 @@ h2{
     font-size: 20px;
     color: black;
 }
+/* .navlist li a.active{
+    opacity: 0.5;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    padding-bottom: 6px;
+} */
 .navbar .navlist li a:hover{
     opacity: 0.5;
     border-bottom: 2px solid rgba(0, 0, 0, 0.5);
     padding: 5px;
     padding-bottom: 6px;
+    transition: all ease 0.3s;
 }
 .navbar i{
     /* background-color: slateblue; */
@@ -90,7 +110,8 @@ h2{
 }
 #home{
     position: relative;
-    height: calc(100% - 80px);
+    /* height: calc(100% - 100px); */
+    height: 100%;
     width: 100%;
     display: flex;
     /* justify-content: center; */
@@ -112,7 +133,7 @@ h2{
 .left-sec .content{
     text-align: center;
     width: 100%;
-    text-shadow: 0px 0px 30px rgba(0, 0, 0, 0.65);
+    text-shadow: 0px 0px 30px rgba(81, 81, 81, 0.65);
 }
 #links{
     /* height: 60px; */
@@ -149,6 +170,52 @@ h2{
     display: flex;
     align-items: center;
     justify-content:center;
+}
+#buttton{
+    /* height: 60px; */
+    width: 100%;
+    /* background-color: darkgreen; */
+    /* margin: 20px; */
+    margin-top: 50px;
+    /* padding: 200px; */
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+#buttton1{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin-right: 20px;
+    /* margin-top: 70px; */
+}
+#buttton2{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin-right: 20px;
+    /* margin-top: 70px; */
+}
+.fpb{
+    background-color:rgba(0, 0, 0, 0.775);
+    font-size: 1.25vw;
+    /* background: none; */
+    /* border: 1px solid black; */
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+.fpb a{
+    text-decoration: none;
+    color: #fff;
+}
+.fpb:hover{
+    transition: all ease-in 0.2s;
+    background-color: rgba(0, 0, 0, 0.775);
+    border: none;
+    font-weight: 900;
+    cursor: pointer;
+    /* color: black; */
 }
 .circle{
     height: 25px;
@@ -191,6 +258,7 @@ h2{
     align-items: center;
     flex-direction: column;
     position: relative;
+    margin: 10px;
 }
 .aboutt{
     /* background-color: teal; */
@@ -204,6 +272,7 @@ h2{
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
+    margin: 25px;
     /* background-color: chocolate; */
 }
 .skill-section{
@@ -226,11 +295,11 @@ h2{
     font-size: 18px;
 }
 .container{
-    /* position: relative; */
-    max-width: 400px;
-    width: 100%;
+    position: relative;
+    max-width: 350px;
+    /* width: 100%; */
     background-color: #ffffff4d;
-    margin: 0 15px;
+    margin: 0 1px;
     padding: 10px 20px;
     border-radius: 7px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.116) inset;
@@ -356,6 +425,8 @@ h2{
 }
 .edu:hover{
     background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: -10px 10px 20px rgba(96, 96, 96, 0.3) inset;
+    transition: all ease 0.3s;
 }
 .education-sec .edu h4{
     color: rgba(0, 0, 0, 0.403);
@@ -407,13 +478,14 @@ h2{
 }
 .pro:hover{
     background-color: rgba(0, 0, 0, 0.4);
+    /* transition: linear ease 5s; */
 }
 .pro .icon{
     height: 200px;
     width: 200px;
     background-color:rgba(0, 0, 0, 0.234);
     margin: 12%;
-    margin-left: 15%;
+    /* margin-left: 15%; */
     border-radius: 25px 25px 0px 25px;
     display: flex;
     justify-content: center;
@@ -429,12 +501,17 @@ h2{
     padding: 2%;
     padding-bottom: 0%;
 }
+.pro p a{
+    text-decoration: none;
+    color: rgb(83, 83, 192);
+}
 #contact{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column; 
     position: relative;
+    background-color: #0000000a;
 }
 .contact-us{
     height:100%;
@@ -453,6 +530,7 @@ h2{
     opacity: 0.5;
 }
 .contact-sec{
+    margin: 20px;
     width: 30%;
     /* height: 100%; */
     /* width: 60%; */
@@ -468,6 +546,7 @@ h2{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 2%;
 }
 .input-tag input{
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.247);
@@ -475,9 +554,12 @@ h2{
     width: 100%;
     border: none;
     border-bottom: 2px solid #111;
+    padding: 2%;
     font-size: 1vw;
 }
 .input-tag textarea{
+    padding: 2%;
+    /* margin: 5px; */
     height: 100%;
     width: 100%;
     font-size: 1vw;
@@ -486,15 +568,29 @@ h2{
 textarea::-webkit-scrollbar{
     display: none;
 }
+.botton{
+    margin-left: 20px;
+}
 .btn{
     /* height: 30px;
     width: 48px; */
     border: 2px solid black;
+    text-align: center;
     /* font-size: 12px; */
     /* font-weight: bold; */
     border-radius: 5px;
+    padding: 1%;
+    margin: 1%;
     color: #fff;
     background-color: #111;
+}
+.btn:hover{
+    transition: all ease-in 0.2s;
+    background-color: #0000001c;
+    border: none;
+    color: #000;
+    font-weight: 900;
+    cursor: pointer;
 }
 footer{
     position: relative;

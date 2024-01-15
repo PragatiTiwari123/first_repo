@@ -30,3 +30,15 @@ var flag =0 ;
 //     // console.log(e);
 //     // navbar.style.width = "100vmax";
 // })
+
+var navList = document.querySelectorAll(".navlist");
+// console.log(navList);
+// console.log(navList.children);
+navList.forEach(function(e){
+    Array.from(e.children).forEach(function(e1){
+        // console.log(e1);
+        // e1.addEventListener('click',function(){
+        //     e1.style.color = "green" 
+        // })
+    })
+})
