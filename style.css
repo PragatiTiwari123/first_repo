@@ -138,7 +138,7 @@ h2{
 #links{
     /* height: 60px; */
     width: 100%;
-    /* background-color: darkgreen; */
+    /* background-color:burlywood; */
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -151,7 +151,7 @@ h2{
     font-size: 1.25vw;
 }
 .link{
-    /* background-color: aquamarine; */
+    /* background-color: pink; */
     padding: 2%;
 }
 #link1{
@@ -162,11 +162,13 @@ h2{
     justify-content:center;
 }
 #link2{
+    /* background-color: violet; */
     display: flex;
     align-items: center;
     justify-content:center;
 }
 #link3{
+    /* background-color: teal; */
     display: flex;
     align-items: center;
     justify-content:center;
@@ -293,6 +295,7 @@ h2{
     /* padding-bottom: 0%; */
     text-align: center;
     font-size: 18px;
+    padding: 2% 0;
 }
 .container{
     position: relative;
@@ -387,9 +390,13 @@ h2{
     border-radius: 7px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.392);
 }
+.about-me h3{
+    padding: 2% 0 ;
+}
 .about-me p{
     color: black;
     opacity: 0.8;
+    font-size: 14px;
 }
 #education{
     /* background-color: teal; */
@@ -416,12 +423,15 @@ h2{
 } */
 .edu{
     margin: 5%;
-    height: 250px;
+    height: 260px;
     width: 400px;
     /* border: 2px black solid; */
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.348);
     border-radius: 2%;
     background-color: white;
+}
+#edu-final{
+    padding-bottom:20px ;
 }
 .edu:hover{
     background-color: rgba(0, 0, 0, 0.2);
@@ -435,9 +445,11 @@ h2{
     padding-bottom: 0%;
 }
 .education-sec .edu ul{
+   font-size: 14px;
    padding: 9%; 
 }
 .education-sec .edu p{
+    font-size: 14px;
     padding: 5%;
 }
 #project{

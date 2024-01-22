@@ -98,9 +98,9 @@
         flex-direction: column;
         text-align: center;
     }
-    .navlist{
-        /* background-color: chartreuse; */
-        display: none;
+    #v-nav-resp{
+        /* height: 200px; */
+        opacity: 0;
     }
     .navbar i{
         display: block;
@@ -108,6 +108,7 @@
         top: 25%;
         right: 5%;
         font-size: 25px;
+        cursor: pointer;
         /* font-size: 4vw; */
         /* font-size: 3vw; */
         /* padding: 20px; */
