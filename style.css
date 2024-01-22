@@ -510,8 +510,9 @@ h2{
 }
 .pro p{
     text-align: center;
-    padding: 2%;
-    padding-bottom: 0%;
+    /* padding: 2%; */
+    /* padding-bottom: 2%; */
+    font-size: 12px;
 }
 .pro p a{
     text-decoration: none;
