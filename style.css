@@ -150,6 +150,13 @@ h2{
     padding-left: 10px;
     font-size: 1.25vw;
 }
+.link p{
+    text-decoration: none;
+    color: rgba(0, 0, 0,0.7);
+    font-weight: 530;
+    padding-left: 10px;
+    font-size: 1.25vw;
+}
 .link{
     /* background-color: pink; */
     padding: 2%;
@@ -397,6 +404,12 @@ h2{
     color: black;
     opacity: 0.8;
     font-size: 14px;
+}
+.about-me .info{
+    color: black;
+    opacity: 0.8;
+    font-size: 14px;
+    margin:2% 0;
 }
 #education{
     /* background-color: teal; */

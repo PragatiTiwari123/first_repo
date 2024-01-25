@@ -18,7 +18,7 @@ var navList = document.querySelectorAll(".navlist");
 var flag =0 ;
 navicon.addEventListener("click",function(e){
     // navbar.classList.toggle('v-nav-resp')
-    vresp.classList.toggle('.navlist')
+    // vresp.classList.toggle('.navlist')
     // console.log(e);
 })
 
@@ -33,3 +33,4 @@ navList.forEach(function(e){
         // })
     })
 })
+
