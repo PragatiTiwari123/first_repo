@@ -42,31 +42,45 @@ let res = document.getElementsByClassName('reset-btn')
 // sub.preventDefault()
 let submit = sub[0]
 let reset = res[0]
-console.log(reset);
+// let flag=0
+// console.log(reset);
 // submit.preventdefault()
 submit.addEventListener('click',function(){
     let visitorValue=visitor.value
     // console.log(visitorValue);
-    let flag=0
+
     if(flag === 0){
-        if(visitorValue === null || visitorValue === undefined){
+        if(visitorValue === null || visitorValue === undefined || visitorValue === ''){
             // console.log(visitorValue);
             inputArea.innerHTML =  `<div>
                                         Wrong INput please write your name properly
                                     </div>`
+            submit.innerHTML = 'Want to submit again'
+            reset.style.display = 'none'
         }
         else{
-            console.log(visitorValue);
-            inputArea.innerHTML =  `<div>
+            // console.log(visitorValue);
+            inputArea.innerHTML =  `<div class="new">
                                         ${visitorValue} 🖤 Thankyou for ur valuable time..
+                                    </div>
+                                    <div>
+                                        Your kindness has not gone unnoticed, and I am truly grateful for ur feedback. Your support means a lot to me
                                     </div>`
-            inputArea.style.fontWeight = '900'
-            inputArea.style.fontSize = '5vw' 
-
+            let imp = document.getElementsByClassName('new')
+            imp[0].style.fontWeight = '900'
+            imp[0].style.fontSize = '3.18vw' 
+            submit.innerHTML = 'Want to submit again'
+            reset.style.display = 'none'
         }
         flag=1
     }
     else{
         flag=0
+        submit.innerHTML = 'Submit'
+
     }
 })
+reset.addEventListener('click',function(){})
+function come_again(){
+
+}
