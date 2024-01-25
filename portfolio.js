@@ -34,3 +34,39 @@ navList.forEach(function(e){
     })
 })
 
+let inputArea = document.querySelector('.input-tag')
+let visitor = document.getElementById('visitor')
+let sub = document.getElementsByClassName('sub-btn')
+let res = document.getElementsByClassName('reset-btn')
+// console.log(sub[0]);
+// sub.preventDefault()
+let submit = sub[0]
+let reset = res[0]
+console.log(reset);
+// submit.preventdefault()
+submit.addEventListener('click',function(){
+    let visitorValue=visitor.value
+    // console.log(visitorValue);
+    let flag=0
+    if(flag === 0){
+        if(visitorValue === null || visitorValue === undefined){
+            // console.log(visitorValue);
+            inputArea.innerHTML =  `<div>
+                                        Wrong INput please write your name properly
+                                    </div>`
+        }
+        else{
+            console.log(visitorValue);
+            inputArea.innerHTML =  `<div>
+                                        ${visitorValue} 🖤 Thankyou for ur valuable time..
+                                    </div>`
+            inputArea.style.fontWeight = '900'
+            inputArea.style.fontSize = '5vw' 
+
+        }
+        flag=1
+    }
+    else{
+        flag=0
+    }
+})
