@@ -1,19 +1,20 @@
 let NavbarIcon = document.querySelector('.navicon')
 let navbar = document.querySelector('.navbar')
 let navbarList = document.querySelector('#v-nav-resp')
+let flag=0
 NavbarIcon.addEventListener('click',function(){
-    console.log(navbarList);
-    navbarList.style.opacity='1'
-    navbar.style.backgroudColor = 'white'
-    navbar.style.float = 'left'
-    // navbarList.innerHTML = `<div class="burger">
-
-    //                         </div>`
-    // let bug=document.getElementsByClassName('burger')
-    // bug[0].style.display = "block"
-    // bug[0].style.height = '100px'
-    // bug[0].style.width = '100px'
-    // bug[0].style.backgroundColor = 'black'
+    if(flag === 0){
+        // console.log(navbarList);
+        navbarList.style.opacity='1'
+        navbarList.style.backgroundColor = 'white'
+        flag=1
+    }
+    else{
+        flag=0
+        navbar.style.backgroundColor = 'transparent'
+        navbarList.style.opacity='0'
+    }
+    
 })
 
 
@@ -23,7 +24,7 @@ let sub = document.getElementsByClassName('sub-btn')
 let res = document.getElementsByClassName('reset-btn')
 let submit = sub[0]
 let reset = res[0]
-let flag=0
+
 
 submit.addEventListener('click',function(){
     let visitorValue=visitor.value
