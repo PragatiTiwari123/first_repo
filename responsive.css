@@ -124,3 +124,8 @@
         padding: 3vw;
     }
 }
+@media (max-width : 550px){
+    #v-nav-resp{
+        left: 30%;
+    }
+}
