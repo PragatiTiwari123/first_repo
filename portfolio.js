@@ -1,56 +1,34 @@
-// var main = document.querySelector("#main");
-// var cursor = document.querySelector(".cursor");
-// // console.log(main);
-// main.addEventListener("mousemove",function(e){
-//     // console.log("Hye");
-//     cursor.style.left = e.x + "px"; 
-//     cursor.style.top = e.y + "px";
-// })
+let NavbarIcon = document.querySelector('.navicon')
+let navbar = document.querySelector('.navbar')
+let navbarList = document.querySelector('#v-nav-resp')
+NavbarIcon.addEventListener('click',function(){
+    console.log(navbarList);
+    navbarList.style.opacity='1'
+    navbar.style.backgroudColor = 'white'
+    navbar.style.float = 'left'
+    // navbarList.innerHTML = `<div class="burger">
 
-var navbar = document.querySelector(".navbar");
-
-var navicon = document.querySelector(".navicon");
-
-var vresp = document.querySelector("#v-nav-resp");
-// console.log(navlist);
-var navList = document.querySelectorAll(".navlist");
-
-var flag =0 ;
-navicon.addEventListener("click",function(e){
-    // navbar.classList.toggle('v-nav-resp')
-    // vresp.classList.toggle('.navlist')
-    // console.log(e);
+    //                         </div>`
+    // let bug=document.getElementsByClassName('burger')
+    // bug[0].style.display = "block"
+    // bug[0].style.height = '100px'
+    // bug[0].style.width = '100px'
+    // bug[0].style.backgroundColor = 'black'
 })
 
-
-// console.log(navList);
-// console.log(navList.children);
-navList.forEach(function(e){
-    Array.from(e.children).forEach(function(e1){
-        // console.log(e1);
-        // e1.addEventListener('click',function(){
-        //     e1.style.color = "green" 
-        // })
-    })
-})
 
 let inputArea = document.querySelector('.input-tag')
 let visitor = document.getElementById('visitor')
 let sub = document.getElementsByClassName('sub-btn')
 let res = document.getElementsByClassName('reset-btn')
-// console.log(sub[0]);
-// sub.preventDefault()
 let submit = sub[0]
 let reset = res[0]
-// let flag=0
-// console.log(reset);
-// submit.preventdefault()
+let flag=0
+
 submit.addEventListener('click',function(){
     let visitorValue=visitor.value
-    // console.log(visitorValue);
-
     if(flag === 0){
-        if(visitorValue === null || visitorValue === undefined || visitorValue === ''){
+        if(visitorValue === null || visitorValue === undefined || visitorValue === '' ||  isNaN(visitorValue) || typeof(visitorValue) === number){
             // console.log(visitorValue);
             inputArea.innerHTML =  `<div>
                                         Wrong INput please write your name properly
@@ -71,6 +49,7 @@ submit.addEventListener('click',function(){
             imp[0].style.fontSize = '3.18vw' 
             submit.innerHTML = 'Want to submit again'
             reset.style.display = 'none'
+            submit.addEventListener('click',come_again())
         }
         flag=1
     }
@@ -80,7 +59,7 @@ submit.addEventListener('click',function(){
 
     }
 })
-reset.addEventListener('click',function(){})
+reset.addEventListener('click',come_again())
 function come_again(){
 
 }
