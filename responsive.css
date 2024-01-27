@@ -98,8 +98,13 @@
         flex-direction: column;
         /* text-align: center; */
     }
+    .navbar .navlist li a{
+        padding: 5px;
+    }
     #v-nav-resp{
-        margin-top: 20%;
+        top: 60%;
+        left: 50%;
+        position: relative;
         /* width: 100%; */
         opacity: 0;
     }
