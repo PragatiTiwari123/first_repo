@@ -344,16 +344,24 @@ h2{
     opacity: 0;
 }
 .skillper.css{
-    width: 80%;
+    width: 75%;
     animation-delay:0.1s ;
 }
-.skillper.nodejs{
-    width: 40%;
+.skillper.javascript{
+    width: 70%;
+    animation-delay:0.3s ;
+}
+.skillper.python{
+    width: 50%;
     animation-delay:0.2s ;
 }
-.skillper.java{
-    width: 75%;
-    animation-delay:0.3s ;
+.skillper.collaboration{
+    width: 90%;
+    animation-delay:0.2s ;
+}
+.skillper.teamwork{
+    width: 85%;
+    animation-delay:0.2s ;
 }
 @keyframes progress {
     0%{
