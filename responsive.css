@@ -16,6 +16,9 @@
     .link a{
         font-size: 15px;
     }
+    .link p{
+        font-size: 15px;
+    }
     .fpb{
         font-size: 15px;
     }
@@ -67,6 +70,9 @@
 }
 @media (max-width : 350px){
     .link a{
+        display: none;
+    }
+    .link p{
         display: none;
     }
     .circle{

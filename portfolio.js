@@ -1,4 +1,5 @@
 let NavbarIcon = document.querySelector('.navicon')
+let remIcon = document.querySelector('.rem')
 let navbar = document.querySelector('.navbar')
 let navbarList = document.querySelector('#v-nav-resp')
 let flag=0
@@ -15,6 +16,10 @@ NavbarIcon.addEventListener('click',function(){
         navbarList.style.opacity='0'
     }
     
+})
+remIcon.addEventListener('click',function(){
+    navbar.style.backgroundColor = 'transparent'
+    navbarList.style.opacity='0'
 })
 
 
