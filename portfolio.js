@@ -34,13 +34,14 @@ let reset = res[0]
 submit.addEventListener('click',function(){
     let visitorValue=visitor.value
     if(flag === 0){
-        if(visitorValue === null || visitorValue === undefined || visitorValue === '' ||  isNaN(visitorValue) || typeof(visitorValue) === number){
+        if(visitorValue === null || visitorValue === undefined || visitorValue === ''){
             // console.log(visitorValue);
             inputArea.innerHTML =  `<div>
                                         Wrong INput please write your name properly
                                     </div>`
             submit.innerHTML = 'Want to submit again'
-            reset.style.display = 'none'
+            reset.style.opacity = '0'
+            console.log("execute");
         }
         else{
             // console.log(visitorValue);
@@ -54,18 +55,29 @@ submit.addEventListener('click',function(){
             imp[0].style.fontWeight = '900'
             imp[0].style.fontSize = '3.18vw' 
             submit.innerHTML = 'Want to submit again'
-            reset.style.display = 'none'
-            submit.addEventListener('click',come_again())
+            reset.style.opacity = '0'
+            console.log("execute 1");
         }
         flag=1
     }
     else{
+        // console.log("execute 2");
+        // inputArea.innerHTML =`<div class="input-tag">
+        //                         <input type="text" id="visitor" placeholder="Enter your name">
+        //                         <input type="text" placeholder="Enter your mail">
+        //                         <input type="text" placeholder="Enter the topic">
+        //                         <input type="text" placeholder="Leave your thought">
+        //                      </div>`
         flag=0
         submit.innerHTML = 'Submit'
-
+        reset.style.opacity = '1'
     }
 })
-reset.addEventListener('click',come_again())
-function come_again(){
-
-}
+reset.addEventListener('click',function(){
+    inputArea.innerHTML =`<div class="input-tag">
+                            <input type="text" id="visitor" placeholder="Enter your name">
+                            <input type="text" placeholder="Enter your mail">
+                            <input type="text" placeholder="Enter the topic">
+                            <input type="text" placeholder="Leave your thought">
+                        </div>`
+})
